@@ -20,7 +20,8 @@ dependencies {
 
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile 'mysql:mysql-connector-java'
-	compileOnly('org.projectlombok:lombok')
+	compileOnly('org.projectlombok:lombok:1.16.18')
+
 
 	// https://mvnrepository.com/artifact/org.hsqldb/hsqldb
 	//testCompile group: 'org.hsqldb', name: 'hsqldb', version: '2.4.0'
