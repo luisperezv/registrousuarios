@@ -17,6 +17,15 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile 'mysql:mysql-connector-java'
+	compileOnly('org.projectlombok:lombok')
+
+	// https://mvnrepository.com/artifact/org.hsqldb/hsqldb
+	//testCompile group: 'org.hsqldb', name: 'hsqldb', version: '2.4.0'
+	//classpath group: 'org.hsqldb', name: 'hsqldb', version: gradle.hsqldbVersion
+	compile group: 'org.hsqldb', name: 'hsqldb', version: '2.4.0'
 }
 
 test {
