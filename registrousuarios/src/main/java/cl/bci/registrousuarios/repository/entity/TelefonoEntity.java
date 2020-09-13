@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Getter
 @Setter
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
